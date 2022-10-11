@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
 
-    <title>Nibble-link shortner</title>
+    <title>Shrtn it</title>
     <style>
         body{
-            background-color: black;
+            background-color: #55185D;
         }
         h1,h3{
             font-family: 'Lexend Deca', sans-serif;
-            color: white;
+            color: #FFD524;
             text-align: center;
         }
         .head{
@@ -35,14 +35,14 @@
             color: white;
         }
         a:hover{
-            color: gray;
+            color: #FFD524;
         }
         footer{
             position: absolute;
             bottom: 2rem;
             width: 100%;
             text-align: center;
-            color: white;
+            color: #FFD524;
             font-family: 'Lexend Deca', sans-serif;
             font-size: 1.5rem;
         }
@@ -51,13 +51,13 @@
             color: white;
         }
         footer a:hover{
-            color: gray;
+            color: #FFD524;
         }
         #copybtn{
             width: 7rem;
         }
         .copied{
-            color: white;
+            color: #FFD524;
             font-family: 'Lexend Deca', sans-serif;
             font-size: 1rem;
             display: none;
@@ -66,13 +66,13 @@
     </style>
   </head>
   <body>
-    <h1 class="head">Nibble</h1>
+    <h1 class="head">Shrtn</h1>
     <h3 class="subhead">A URL Shortner</h3>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4 mt-3 text-center">
                 <h3>The Shortened link is:</h3>
-                    <a href="<%= url%>" target="_blank"><p class="text-center mt-3" id="txt">https://nibble.ga/<%= shorturls%></p></a>
+                    <a href="<%= url%>" target="_blank"><p class="text-center mt-3" id="txt">http://localhost:3000/<%= shorturls%></p></a>
                     <button onclick="copy('#txt')" type="button" class="btn btn-light" id="copybtn">Copy link</button>
                     <p class="mt-3 copied" id="copied">Copied!</p>
             </div>
